@@ -1,17 +1,7 @@
-:root {
-    --black: #101010;
-    --white: #FFFFFF;
-
-    --philosopher: 'Philosopher', sans-serif;
+.font-brother {
+    font-family: "brother-1816", sans-serif;
 }
 
-body {
-    background-color: var(--black);
-    color: var(--white);
-    font-family: var(--philosopher);
-}
-
-.container {
-    margin: 12% 6%;
-    max-width: 1466px;
+.font-philosopher {
+    font-family: 'Philosopher', sans-serif;
 }
