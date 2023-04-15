@@ -5,3 +5,7 @@
 .font-philosopher {
     font-family: 'Philosopher', sans-serif;
 }
+
+.borda {
+    border: 1px solid white;
+}
