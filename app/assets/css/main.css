@@ -1,0 +1,10 @@
+@import "tailwindcss";
+@import "@nuxt/ui";
+
+@theme {
+  --font-display: "Inter", "sans-serif";
+}
+
+html {
+  scroll-behavior: smooth;
+}
