@@ -7,7 +7,7 @@ export default defineNuxtConfig({
   css: ["~/assets/css/main.css"],
   modules: ["@nuxt/ui", "motion-v/nuxt", "@nuxt/image", "@nuxtjs/seo"],
   site: {
-    url: "https://vercel.zandaka.com",
+    url: "https://zandaka-portfolio.vercel.app/",
     name: "Zandaka",
     description: "O melhor izakaya de Florianópolis",
     defaultLocale: "pt-BR",
