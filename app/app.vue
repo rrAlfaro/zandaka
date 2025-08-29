@@ -15,7 +15,6 @@ useHead({
 });
 
 useSeoMeta({
-  title: "Zandaka",
   ogTitle: "Zandaka",
   description: "O melhor izakaya de Florianópolis",
   ogDescription: "O melhor izakaya de Florianópolis",

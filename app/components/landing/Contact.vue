@@ -44,7 +44,7 @@ const address = {
             :initial="{ opacity: 0, transform: 'translateY(20px)' }"
             :while-in-view="{ opacity: 1, transform: 'translateY(0)' }"
             :transition="{ delay: 0.2 }"
-            :in-view-options="{ once: false }"
+            :in-view-options="{ once: true }"
           >
             Localização e Contato
           </Motion>
@@ -56,7 +56,7 @@ const address = {
             :initial="{ opacity: 0, transform: 'translateY(20px)' }"
             :while-in-view="{ opacity: 1, transform: 'translateY(0)' }"
             :transition="{ delay: 0.3 }"
-            :in-view-options="{ once: false }"
+            :in-view-options="{ once: true }"
           >
             Reserve sua mesa online agora e viva a experiência ZANDAKA.
           </Motion>
@@ -68,7 +68,7 @@ const address = {
             :initial="{ opacity: 0, transform: 'translateY(20px)' }"
             :while-in-view="{ opacity: 1, transform: 'translateY(0)' }"
             :transition="{ delay: 0.4 }"
-            :in-view-options="{ once: false }"
+            :in-view-options="{ once: true }"
             class="text-sm"
           >
             <p class="font-semibold">{{ contact.title }}</p>
@@ -86,7 +86,7 @@ const address = {
             :initial="{ opacity: 0, transform: 'translateY(20px)' }"
             :while-in-view="{ opacity: 1, transform: 'translateY(0)' }"
             :transition="{ delay: 0.5 }"
-            :in-view-options="{ once: false }"
+            :in-view-options="{ once: true }"
             class="text-sm"
           >
             <p class="font-semibold">{{ address.title }}</p>
@@ -108,7 +108,7 @@ const address = {
             :initial="{ opacity: 0, transform: 'translateY(20px)' }"
             :while-in-view="{ opacity: 1, transform: 'translateY(0)' }"
             :transition="{ delay: 0.6 + 0.1 * index }"
-            :in-view-options="{ once: false }"
+            :in-view-options="{ once: true }"
             class="text-sm"
           >
             <UButton v-bind="link" />
@@ -119,7 +119,7 @@ const address = {
           :initial="{ opacity: 0, transform: 'translateY(20px)' }"
           :while-in-view="{ opacity: 1, transform: 'translateY(0)' }"
           :transition="{ delay: 0.1 }"
-          :in-view-options="{ once: false }"
+          :in-view-options="{ once: true }"
           class="w-full h-full"
         >
           <iframe

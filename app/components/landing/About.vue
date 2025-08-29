@@ -15,7 +15,7 @@
         :initial="{ opacity: 0, transform: 'translateY(20px)' }"
         :while-in-view="{ opacity: 1, transform: 'translateY(0)' }"
         :transition="{ delay: 0.2 }"
-        :in-view-options="{ once: false }"
+        :in-view-options="{ once: true }"
       >
         Zandaka
       </Motion>
@@ -26,7 +26,7 @@
         :initial="{ opacity: 0, transform: 'translateY(20px)' }"
         :while-in-view="{ opacity: 1, transform: 'translateY(0)' }"
         :transition="{ delay: 0.3 }"
-        :in-view-options="{ once: false }"
+        :in-view-options="{ once: true }"
       >
         O ZANDAKA nasceu para trazer a essência dos izakayas de Tóquio para
         Florianópolis. Aqui você encontra pratos tradicionais, drinks autorais e
@@ -43,7 +43,7 @@
           :initial="{ opacity: 0, transform: 'translateY(20px)' }"
           :while-in-view="{ opacity: 1, transform: 'translateY(0)' }"
           :transition="{ delay: 0.4 + 0.1 * index }"
-          :in-view-options="{ once: false }"
+          :in-view-options="{ once: true }"
         >
           <NuxtImg
             :src="`/images/Group-${i + 4}.svg`"
@@ -58,7 +58,7 @@
       :initial="{ opacity: 0, transform: 'translateY(20px)' }"
       :while-in-view="{ opacity: 1, transform: 'translateY(0)' }"
       :transition="{ delay: 0.1 }"
-      :in-view-options="{ once: false }"
+      :in-view-options="{ once: true }"
       class="w-full h-full"
     >
       <NuxtImg

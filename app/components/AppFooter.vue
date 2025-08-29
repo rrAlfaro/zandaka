@@ -14,7 +14,11 @@ const address = ref({
 
 <template>
   <UFooter
-    :ui="{ container: 'lg:py-8 space-y-8 lg:space-y-0', top: '!py-0' }"
+    :ui="{
+      container: 'lg:py-8 space-y-8 lg:space-y-0',
+      top: '!py-0',
+      bottom: '!py-0',
+    }"
     class="py-0"
   >
     <div
@@ -57,6 +61,22 @@ const address = ref({
       <UButton icon="simple-icons:instagram" variant="ghost" />
       <UButton icon="simple-icons:x" variant="ghost" />
       <UButton icon="simple-icons:spotify" variant="ghost" />
+    </template>
+
+    <template #bottom>
+      <USeparator />
+      <UContainer class="flex items-center justify-between py-4">
+        <p class="text-muted text-sm">
+          Copyright © {{ new Date().getFullYear() }}
+        </p>
+
+        <div>
+          <span class="text-muted text-sm">Criado por</span>
+          <UButton variant="link" to="https://devrra.com" target="_blank">
+            Rafael Alfaro</UButton
+          >
+        </div>
+      </UContainer>
     </template>
   </UFooter>
 </template>
