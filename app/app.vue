@@ -6,13 +6,13 @@ useHead({
     { key: "theme-color", name: "theme-color" },
   ],
   link: [{ rel: "icon", href: "/favicon.ico" }],
-  script: [
-    {
-      src: "/_vercel/speed-insights/script.js",
-      defer: true,
-      type: "text/javascript",
-    },
-  ],
+  // script: [
+  //   {
+  //     src: "/_vercel/speed-insights/script.js",
+  //     defer: true,
+  //     type: "text/javascript",
+  //   },
+  // ],
   htmlAttrs: {
     lang: "pt-BR",
     class: "dark",

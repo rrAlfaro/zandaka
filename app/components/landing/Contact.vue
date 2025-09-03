@@ -122,7 +122,7 @@ const address = {
           :in-view-options="{ once: false }"
           class="w-full h-full"
         >
-          <iframe
+          <!-- <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14142.662650622306!2d-48.483764630810256!3d-27.603893304590553!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95273ea848636a4d%3A0x6f700ac19098c89d!2sLagoa%20da%20Concei%C3%A7%C3%A3o%2C%20Florian%C3%B3polis%20-%20SC!5e0!3m2!1spt-BR!2sbr!4v1756404788580!5m2!1spt-BR!2sbr"
             style="border: 0"
             loading="lazy"
@@ -130,7 +130,7 @@ const address = {
             title="Mapa"
             class="h-full w-full rounded-lg"
             :allowfullscreen="false"
-          />
+          /> -->
         </LazyMotion>
       </ClientOnly>
     </UPageCTA>
