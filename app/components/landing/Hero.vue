@@ -32,9 +32,7 @@
           src="/images/logo.png"
           alt="Logo"
           format="webp"
-          quality="80"
-          width="252"
-          height="114"
+          sizes="(max-width: 640px) 200px, (max-width: 1024px) 400px, 448px"
           preload
           fetchpriority="high"
           class="w-full max-w-xl mx-auto px-16 py-32"

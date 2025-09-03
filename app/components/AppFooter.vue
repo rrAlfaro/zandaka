@@ -47,7 +47,9 @@ const address = ref({
           :src="`/images/Group-${i}.svg`"
           alt="Desenho artistico de comida japonesa"
           height="48"
-          class="h-12 w-auto"
+          loading="lazy"
+          quality="80"
+          format="webp"
         />
       </UMarquee>
 
@@ -60,9 +62,8 @@ const address = ref({
         alt="Logo"
         format="webp"
         quality="80"
-        width="448"
-        height="203"
-        class="w-full max-w-36"
+        width="160"
+        height="72"
       />
     </template>
 

@@ -48,8 +48,10 @@
           <NuxtImg
             :src="`/images/Group-${i + 4}.svg`"
             alt="Sushi image"
+            height="68"
+            loading="lazy"
             quality="80"
-            class="h-16 sm:h-20 w-auto"
+            format="webp"
           />
         </Motion>
       </UPageGrid>
@@ -67,7 +69,7 @@
         alt="Banner (4)"
         format="webp"
         quality="80"
-        sizes="(max-width: 768px) 380px, 768px"
+        sizes="100vw lg:576px"
         loading="lazy"
         class="aspect-square rounded-lg object-cover"
       />
