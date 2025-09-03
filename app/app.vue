@@ -1,20 +1,15 @@
 <script setup lang="ts">
-// import { SpeedInsights } from "@vercel/speed-insights/nuxt";
-
 useHead({
   meta: [
     { charset: "utf-8" },
     { name: "viewport", content: "width=device-width, initial-scale=1" },
     { key: "theme-color", name: "theme-color" },
   ],
-  link: [
-    { rel: "icon", href: "/favicon.ico" },
-    { rel: "preconnect", href: "https://maps.googleapis.com" },
-  ],
+  link: [{ rel: "icon", href: "/favicon.ico" }],
   script: [
     {
-      src: "/_vercel/speed-insights/script.js", // Path servido pelo Vercel (evita adblockers)
-      defer: true, // Garante que não bloqueie a renderização
+      src: "/_vercel/speed-insights/script.js",
+      defer: true,
       type: "text/javascript",
     },
   ],
@@ -51,7 +46,5 @@ defineOgImageComponent("NuxtSeo", {
     <USeparator />
 
     <AppFooter />
-
-    <!-- <SpeedInsights /> -->
   </UApp>
 </template>

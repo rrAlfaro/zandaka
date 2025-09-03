@@ -4,15 +4,15 @@
     <LandingHero />
 
     <!-- hightlights -->
-    <LandingHighlights />
+    <LazyLandingHighlights />
 
     <!-- testimonials -->
-    <LandingTestimonials />
+    <LazyLandingTestimonials />
 
     <!-- about -->
-    <LandingAbout />
+    <LazyLandingAbout />
 
     <!-- contact -->
-    <LandingContact />
+    <LazyLandingContact />
   </UPage>
 </template>
