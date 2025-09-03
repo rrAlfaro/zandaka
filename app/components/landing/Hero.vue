@@ -8,6 +8,7 @@
       muted
       loop
       playsinline
+      aria-hidden="true"
       class="absolute inset-0 object-cover -z-10 max-h-full h-full w-full"
     />
 

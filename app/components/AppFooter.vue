@@ -45,7 +45,7 @@ const address = ref({
           v-for="i in 15"
           :key="i"
           :src="`/images/Group-${i}.svg`"
-          alt="Sushi image"
+          alt="Desenho artistico de comida japonesa"
           class="h-12 w-auto"
         />
       </UMarquee>
@@ -58,9 +58,17 @@ const address = ref({
     </template>
 
     <template #right>
-      <UButton icon="simple-icons:instagram" variant="ghost" />
-      <UButton icon="simple-icons:x" variant="ghost" />
-      <UButton icon="simple-icons:spotify" variant="ghost" />
+      <UButton
+        icon="simple-icons:instagram"
+        variant="ghost"
+        aria-label="Instagram"
+      />
+      <UButton icon="simple-icons:x" variant="ghost" aria-label="X" />
+      <UButton
+        icon="simple-icons:spotify"
+        variant="ghost"
+        aria-label="Spotify"
+      />
     </template>
 
     <template #bottom>
@@ -72,7 +80,13 @@ const address = ref({
 
         <div>
           <span class="text-muted text-sm">Criado por</span>
-          <UButton variant="link" to="https://devrra.com" target="_blank">
+          <!-- FIXME: Alterar link quando definido -->
+          <UButton
+            variant="link"
+            to="https://devrra.com"
+            target="_blank"
+            aria-label="Portfólio de Rafael Alfaro"
+          >
             Rafael Alfaro</UButton
           >
         </div>

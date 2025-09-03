@@ -12,8 +12,8 @@
   >
     <template #title>
       <Motion
-        :initial="{ opacity: 0, transform: 'translateY(20px)' }"
-        :while-in-view="{ opacity: 1, transform: 'translateY(0)' }"
+        :initial="{ opacity: 0, y: 20 }"
+        :while-in-view="{ opacity: 1, y: 0 }"
         :transition="{ delay: 0.2 }"
         :in-view-options="{ once: false }"
       >
@@ -23,8 +23,8 @@
 
     <template #description>
       <Motion
-        :initial="{ opacity: 0, transform: 'translateY(20px)' }"
-        :while-in-view="{ opacity: 1, transform: 'translateY(0)' }"
+        :initial="{ opacity: 0, y: 20 }"
+        :while-in-view="{ opacity: 1, y: 0 }"
         :transition="{ delay: 0.3 }"
         :in-view-options="{ once: false }"
       >
@@ -40,8 +40,8 @@
         <Motion
           v-for="(i, index) in 3"
           :key="i"
-          :initial="{ opacity: 0, transform: 'translateY(20px)' }"
-          :while-in-view="{ opacity: 1, transform: 'translateY(0)' }"
+          :initial="{ opacity: 0, y: 20 }"
+          :while-in-view="{ opacity: 1, y: 0 }"
           :transition="{ delay: 0.4 + 0.1 * index }"
           :in-view-options="{ once: false }"
         >
@@ -55,8 +55,8 @@
     </template>
 
     <Motion
-      :initial="{ opacity: 0, transform: 'translateY(20px)' }"
-      :while-in-view="{ opacity: 1, transform: 'translateY(0)' }"
+      :initial="{ opacity: 0, y: 20 }"
+      :while-in-view="{ opacity: 1, y: 0 }"
       :transition="{ delay: 0.1 }"
       :in-view-options="{ once: false }"
       class="w-full h-full"

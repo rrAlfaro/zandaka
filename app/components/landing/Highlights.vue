@@ -24,10 +24,11 @@ const highlights = ref([
       <Motion
         v-for="(highlight, index) in highlights"
         :key="index"
-        :initial="{ opacity: 0, transform: 'translateY(20px)' }"
-        :while-in-view="{ opacity: 1, transform: 'translateY(0)' }"
+        :initial="{ opacity: 0, y: 20 }"
+        :while-in-view="{ opacity: 1, y: 0 }"
         :transition="{ delay: 0.2 }"
         :in-view-options="{ once: false }"
+        role="listitem"
       >
         <UPageCard
           :title="highlight.title"
@@ -50,6 +51,7 @@ const highlights = ref([
           <NuxtImg
             :src="`/images/banner (${index + 1}).jpg`"
             class="w-full aspect-[3/2] object-cover rounded-lg"
+            alt="Imagem do prato"
           />
         </UPageCard>
       </Motion>
