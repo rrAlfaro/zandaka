@@ -40,18 +40,20 @@ const address = ref({
     </div>
 
     <template #top>
-      <UMarquee class="py-8">
-        <NuxtImg
-          v-for="i in 15"
-          :key="i"
-          :src="`/images/Group-${i}.svg`"
-          alt="Desenho artistico de comida japonesa"
-          height="48"
-          loading="lazy"
-          quality="80"
-          format="webp"
-        />
-      </UMarquee>
+      <UContainer>
+        <UMarquee class="py-8">
+          <NuxtImg
+            v-for="i in 15"
+            :key="i"
+            :src="`/images/Group-${i}.svg`"
+            alt="Desenho artistico de comida japonesa"
+            format="webp"
+            height="48"
+            loading="lazy"
+            quality="80"
+          />
+        </UMarquee>
+      </UContainer>
 
       <USeparator />
     </template>

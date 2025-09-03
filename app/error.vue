@@ -1,4 +1,10 @@
 <script setup lang="ts">
+import type { NuxtError } from "#app";
+
+defineProps<{
+  error: NuxtError;
+}>();
+
 useHead({
   meta: [
     { charset: "utf-8" },
@@ -12,9 +18,8 @@ useHead({
 });
 
 useSeoMeta({
-  ogTitle: "Zandaka",
-  description: "O melhor izakaya de Florianópolis",
-  ogDescription: "O melhor izakaya de Florianópolis",
+  title: "404",
+  description: "Desculpe, ocorreu um erro",
 });
 
 defineOgImageComponent("NuxtSeo", {
@@ -31,9 +36,10 @@ defineOgImageComponent("NuxtSeo", {
   <UApp>
     <AppHeader />
 
-    <UMain>
-      <NuxtPage />
-    </UMain>
+    <UError
+      :error="error"
+      :clear="{ label: 'Voltar para o inicio', to: '/' }"
+    />
 
     <USeparator />
 
