@@ -1,6 +1,5 @@
 <script setup lang="ts">
-const colorMode = useColorMode();
-colorMode.preference = "dark";
+import { SpeedInsights } from "@vercel/speed-insights/nuxt";
 
 useHead({
   meta: [
@@ -11,6 +10,7 @@ useHead({
   link: [{ rel: "icon", href: "/favicon.ico" }],
   htmlAttrs: {
     lang: "pt-BR",
+    class: "dark",
   },
 });
 
@@ -41,5 +41,7 @@ defineOgImageComponent("NuxtSeo", {
     <USeparator />
 
     <AppFooter />
+
+    <SpeedInsights />
   </UApp>
 </template>
