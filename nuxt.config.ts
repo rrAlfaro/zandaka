@@ -20,9 +20,19 @@ export default defineNuxtConfig({
     identity: definePerson({
       name: "Rafael Alfaro",
       description: "Desenvolvedor Front-end - Front-end Developer",
-      url: "devrra.com",
-      sameAs: ["https://github.com/rralfaro"],
+      url: "https://zandaka-portfolio.vercel.app/",
+      sameAs: [
+        "https://github.com/rralfaro",
+        "https://www.linkedin.com/in/rafaelreichert/",
+      ],
     }),
+  },
+
+  nitro: {
+    prerender: {
+      routes: ["/"],
+      crawlLinks: true,
+    },
   },
 
   ui: {
