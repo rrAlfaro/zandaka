@@ -53,7 +53,7 @@ const highlights = ref([
             class="aspect-[3/2] object-cover rounded-lg"
             format="webp"
             quality="80"
-            sizes="100vw sm:50vw md:592px"
+            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 592px"
             loading="lazy"
             alt="Imagem do prato"
           />
