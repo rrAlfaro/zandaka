@@ -31,6 +31,7 @@
         <NuxtImg
           src="/images/logo.png"
           alt="Logo"
+          format="webp"
           class="w-full max-w-xl mx-auto px-16 py-32"
         />
       </Motion>

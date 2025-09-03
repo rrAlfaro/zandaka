@@ -48,7 +48,7 @@
           <NuxtImg
             :src="`/images/Group-${i + 4}.svg`"
             alt="Sushi image"
-            class="h-16 sm:h-22 w-auto"
+            class="h-16 sm:h-20 w-auto"
           />
         </Motion>
       </UPageGrid>

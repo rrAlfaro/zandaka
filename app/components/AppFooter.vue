@@ -46,6 +46,7 @@ const address = ref({
           :key="i"
           :src="`/images/Group-${i}.svg`"
           alt="Desenho artistico de comida japonesa"
+          height="48"
           class="h-12 w-auto"
         />
       </UMarquee>
@@ -74,9 +75,11 @@ const address = ref({
     <template #bottom>
       <USeparator />
       <UContainer class="flex items-center justify-between py-4">
-        <p class="text-muted text-sm">
-          Copyright © {{ new Date().getFullYear() }}
-        </p>
+        <ClientOnly>
+          <p class="text-muted text-sm">
+            Copyright © {{ new Date().getFullYear() }}
+          </p>
+        </ClientOnly>
 
         <div>
           <span class="text-muted text-sm">Criado por</span>

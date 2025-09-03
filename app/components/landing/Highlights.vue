@@ -51,6 +51,9 @@ const highlights = ref([
           <NuxtImg
             :src="`/images/banner (${index + 1}).jpg`"
             class="w-full aspect-[3/2] object-cover rounded-lg"
+            format="webp"
+            quality="80"
+            sizes="100vw sm:50vw md:600px"
             alt="Imagem do prato"
           />
         </UPageCard>

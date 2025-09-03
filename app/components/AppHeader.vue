@@ -46,6 +46,7 @@ const links = ref<ButtonProps[]>([
         <NuxtImg
           src="/images/logo-draw.svg"
           alt="Logo"
+          height="40"
           class="h-10 w-auto bg-transparent"
         />
         <p class="font-normal">Zandaka</p>
