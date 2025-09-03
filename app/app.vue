@@ -7,7 +7,11 @@ useHead({
     { name: "viewport", content: "width=device-width, initial-scale=1" },
     { key: "theme-color", name: "theme-color" },
   ],
-  link: [{ rel: "icon", href: "/favicon.ico" }],
+  link: [
+    { rel: "icon", href: "/favicon.ico" },
+    { rel: "preconnect", href: "https://maps.googleapis.com" },
+  ],
+
   htmlAttrs: {
     lang: "pt-BR",
     class: "dark",

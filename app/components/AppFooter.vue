@@ -55,7 +55,15 @@ const address = ref({
     </template>
 
     <template #left>
-      <NuxtImg src="/images/logo.png" alt="Logo" class="w-full max-w-36" />
+      <NuxtImg
+        src="/images/logo.png"
+        alt="Logo"
+        format="webp"
+        quality="80"
+        width="448"
+        height="203"
+        class="w-full max-w-36"
+      />
     </template>
 
     <template #right>

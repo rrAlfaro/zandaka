@@ -53,7 +53,7 @@ const highlights = ref([
             class="w-full aspect-[3/2] object-cover rounded-lg"
             format="webp"
             quality="80"
-            sizes="100vw sm:50vw md:600px"
+            sizes="(max-width: 768px) 380px, 768px"
             alt="Imagem do prato"
           />
         </UPageCard>

@@ -48,6 +48,7 @@
           <NuxtImg
             :src="`/images/Group-${i + 4}.svg`"
             alt="Sushi image"
+            quality="80"
             class="h-16 sm:h-20 w-auto"
           />
         </Motion>
@@ -65,6 +66,9 @@
         src="/images/banner (4).jpg"
         alt="Banner (4)"
         format="webp"
+        quality="80"
+        sizes="(max-width: 768px) 380px, 768px"
+        loading="lazy"
         class="aspect-square rounded-lg object-cover"
       />
     </Motion>

@@ -32,6 +32,11 @@
           src="/images/logo.png"
           alt="Logo"
           format="webp"
+          quality="80"
+          width="252"
+          height="114"
+          preload
+          fetchpriority="high"
           class="w-full max-w-xl mx-auto px-16 py-32"
         />
       </Motion>

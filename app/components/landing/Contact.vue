@@ -115,7 +115,7 @@ const address = {
       </template>
 
       <ClientOnly>
-        <Motion
+        <LazyMotion
           :initial="{ opacity: 0, y: 20 }"
           :while-in-view="{ opacity: 1, y: 0 }"
           :transition="{ delay: 0.1 }"
@@ -131,7 +131,7 @@ const address = {
             class="h-full w-full rounded-lg"
             :allowfullscreen="false"
           />
-        </Motion>
+        </LazyMotion>
       </ClientOnly>
     </UPageCTA>
   </UPageSection>
