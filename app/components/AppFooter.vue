@@ -64,6 +64,7 @@ const address = ref({
         quality="80"
         width="160"
         height="72"
+        loading="lazy"
       />
     </template>
 

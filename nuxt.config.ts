@@ -29,9 +29,9 @@ export default defineNuxtConfig({
     colorMode: false,
   },
 
-  vite: {
-    build: {
-      sourcemap: true,
-    },
-  },
+  // vite: {
+  //   build: {
+  //     sourcemap: true,
+  //   },
+  // },
 });
